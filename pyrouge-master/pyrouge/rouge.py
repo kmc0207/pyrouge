@@ -118,7 +118,7 @@ class Rouge155(object):
 
         options = list(map(str, options))
         logging.info("Running ROUGE with options {}".format(" ".join(options)))
-        # print([self._rouge_bin] + list(options))
+        print( list(options))
         return check_output([self._rouge_bin] + options)
 
     def _parse_output(self, output):
